@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Company Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Electricity Company Management System</h1>
+    </header>
+    <main>
+        <section id="employee-section">
+            <h2>Employee Management</h2>
+            <form id="employee-form">
+                <input type="text" id="employee-name" placeholder="Employee Name" required>
+                <input type="text" id="employee-position" placeholder="Position" required>
+                <button type="button" onclick="addEmployee()">Add Employee</button>
+            </form>
+            <ul id="employee-list"></ul>
+        </section>
+
+        <section id="customer-section">
+            <h2>Customer Management</h2>
+            <form id="customer-form">
+                <input type="text" id="customer-name" placeholder="Customer Name" required>
+                <input type="number" id="customer-balance" placeholder="Balance" required>
+                <button type="button" onclick="addCustomer()">Add Customer</button>
+            </form>
+            <ul id="customer-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
